@@ -12,5 +12,6 @@
     two_queue_impl_stack.py 两个队列实现栈
     min_stack.py 最小值栈
     hash.md 哈希表
+    bin_tree.py 树的遍历
 
 
