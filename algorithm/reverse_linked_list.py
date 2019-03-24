@@ -8,6 +8,10 @@ class ListNode:
         self.next = None
 
 
+# 循环的方式
+# 递归的方式
+
+
 class Solution:
     def reverse_list(self, head: ListNode) -> ListNode:
         # 1->2->3->4->5->None
