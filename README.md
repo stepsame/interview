@@ -40,5 +40,8 @@
     reverse_string.py 翻转字符串
     palindrome.py 回文串
     
+## /design_pattern 设计模式
+    singleton.py 单例模式
+    
 
 
