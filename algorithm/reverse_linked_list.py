@@ -9,7 +9,6 @@ class ListNode:
 
 
 # 循环的方式
-# 递归的方式
 
 
 class Solution:
@@ -25,5 +24,20 @@ class Solution:
             cur = next_node
 
         return pre
+
+
+# 递归的方式
+# 思路： 假设 k 之后都已经反转，如何处理 k ? k + 1 指向 k, k 指向 none
+class Solution:
+    def reverse_list(self, head: ListNode) -> ListNode:
+        # 1->2->3->4->5->None
+        # 5->4->3->2->1->None
+        if not head or not head.next:
+            return head
+        p = self.reverse_list(head.next)
+        next_node = head.next
+        next_node.next = head
+        head.next = None
+        return p
 
 
