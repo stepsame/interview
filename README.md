@@ -4,6 +4,7 @@
 
     quicksort.py 快速排序
     mergesort.py 归并排序
+    heapsort.py 堆排序
     binarysearch.py 二分查找
     reverse_linked_list.py 翻转链表
     queue.py 队列
@@ -13,5 +14,6 @@
     min_stack.py 最小值栈
     hash.md 哈希表
     bin_tree.py 树的遍历
+    heap.py 堆
 
 
