@@ -21,7 +21,10 @@
 ### 链表  
     reverse_linked_list.py 翻转链表
     delete_node.py 删除链表节点
+    去除链表重复元素
     merge_linked_list.py 合并有序链表
+    链表成对调换
+    交叉链表求交点
     
 ### 哈希表
     hash.md 哈希表
@@ -31,6 +34,9 @@
     invert_bin_tree.py 翻转二叉树
     level_order_traversal.py 层序遍历
     left_right_view.py 左右视图
+    求最大树深
+    两棵树是否相同
+    前序中序求后序
     
 ### 堆
     topk.py topK 问题
@@ -39,6 +45,11 @@
 ### 字符串
     reverse_string.py 翻转字符串
     palindrome.py 回文串
+    字符串是否变位词
+    
+### 动态规划
+    台阶问题/斐波那契数列
+    找零问题
     
 ## /design_pattern 设计模式
     singleton.py 单例模式
