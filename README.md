@@ -45,7 +45,7 @@
 ### 字符串
     reverse_string.py 翻转字符串
     palindrome.py 回文串
-    字符串是否变位词
+    anagram.py 字符串是否变位词
     
 ### 动态规划
     台阶问题/斐波那契数列
