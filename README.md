@@ -34,8 +34,8 @@
     invert_bin_tree.py 翻转二叉树
     level_order_traversal.py 层序遍历
     left_right_view.py 左右视图
-    求最大树深
-    两棵树是否相同
+    max_depth.py 求最大树深
+    same_tree.py 两棵树是否相同
     前序中序求后序
     
 ### 堆
