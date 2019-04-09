@@ -36,7 +36,7 @@
     left_right_view.py 左右视图
     max_depth.py 求最大树深
     same_tree.py 两棵树是否相同
-    前序中序求后序
+    construct_tree.py 前序中序求后序
     
 ### 堆
     topk.py topK 问题
