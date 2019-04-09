@@ -23,8 +23,8 @@
     delete_node.py 删除链表节点
     delete_duplicate.py 去除链表重复元素
     merge_linked_list.py 合并有序链表
-    链表成对调换
-    交叉链表求交点
+    swap_nodes.py 链表成对调换
+    intersection.py 交叉链表求交点
     
 ### 哈希表
     hash.md 哈希表
