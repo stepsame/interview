@@ -21,7 +21,7 @@
 ### 链表  
     reverse_linked_list.py 翻转链表
     delete_node.py 删除链表节点
-    去除链表重复元素
+    delete_duplicate.py 去除链表重复元素
     merge_linked_list.py 合并有序链表
     链表成对调换
     交叉链表求交点
