@@ -49,7 +49,7 @@
     
 ### 动态规划
     stairs.py 台阶问题/斐波那契数列
-    找零问题
+    coin_change.py 找零问题
     
 ## /design_pattern 设计模式
     singleton.py 单例模式
