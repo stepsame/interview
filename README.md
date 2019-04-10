@@ -48,7 +48,7 @@
     anagram.py 字符串是否变位词
     
 ### 动态规划
-    台阶问题/斐波那契数列
+    stairs.py 台阶问题/斐波那契数列
     找零问题
     
 ## /design_pattern 设计模式
