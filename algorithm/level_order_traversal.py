@@ -7,24 +7,28 @@ class TreeNode:
         self.right = None
 
 
-# 思路：记录当前层和下一层
+# 思路：BFS
+
+from collections import deque
 
 class Solution:
     def levelOrder(self, root: TreeNode):
-        result = []
         if root is None:
             return []
-        cur_nodes = [root]
-        while cur_nodes:
-            result.append([n.val for n in cur_nodes])
-            next_nodes = []
-            for node in cur_nodes:
+        queue, result = deque([root]), []
+
+        while queue:
+            cur_level, size = [], len(queue)
+            for _ in range(size):
+                node = queue.popleft()
                 if node.left:
-                    next_nodes.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    next_nodes.append(node.right)
-            cur_nodes = next_nodes
+                    queue.append(node.right)
+                cur_level.append(node.val)
+            result.append(cur_level)
         return result
+
 
 
 def test():
