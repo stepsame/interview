@@ -8,22 +8,22 @@ class TreeNode:
 
 # 思路：层序遍历 再处理
 
+from collections import deque
+
 class Solution:
-    def rightSideView(self, root: TreeNode) -> List[int]:
+    def rightSideView(self, root: TreeNode):
         if root is None:
             return []
-        cur_nodes = [root]
-        result = []
-        while cur_nodes:
-            result.append([n.val for n in cur_nodes])
-            next_nodes = []
-            for node in cur_nodes:
+        queue, result = deque([root]), []
+
+        while queue:
+            cur_level, size = [], len(queue)
+            for _ in range(size):
+                node = queue.popleft()
                 if node.left:
-                    next_nodes.append(node.left)
+                    queue.append(node.left)
                 if node.right:
-                    next_nodes.append(node.right)
-            cur_nodes = next_nodes
+                    queue.append(node.right)
+                cur_level.append(node.val)
+            result.append(cur_level)
         return [r[-1] for r in result]
-
-
-
