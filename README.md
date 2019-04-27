@@ -46,6 +46,7 @@
     reverse_string.py 翻转字符串
     palindrome.py 回文串
     anagram.py 字符串是否变位词
+    nuber_of_1_bit 二进制1的位数
     
 ### 动态规划
     stairs.py 台阶问题/斐波那契数列

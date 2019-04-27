@@ -18,3 +18,23 @@ class Solution:
 
 
 # 1->2->3->4
+
+# 循环，增加 dummy node
+
+class Solution:
+    def swapPairs(self, head: ListNode) -> ListNode:
+        if head is None or head.next is None:
+            return head
+        dummy = ListNode(0)
+        dummy.next = head
+        cur = dummy
+
+        while cur.next and cur.next.next:
+            first = cur.next
+            second = cur.next.next
+            first.next = second.next
+            cur.next = second
+            second.next = first
+            cur = cur.next.next
+        return dummy.next
+        

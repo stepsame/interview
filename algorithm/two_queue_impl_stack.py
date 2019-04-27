@@ -3,7 +3,7 @@
 
 # 使用两个 队列 实现 栈
 # 入栈 ： queue 1 直接入队
-# 出栈 ： queue 1 出队，最后一个元素出队，其余元素 入队 queue 2，q1 q2 交换
+# 出栈 ： queue 1 元素出队，入队 queue 2，最后一个元素返回，然后q1 q2 交换
 
 from collections import deque
 
