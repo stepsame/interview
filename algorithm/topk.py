@@ -19,11 +19,7 @@ class TopK:
 
     def push(self, value):
         if len(self.min_heap) > self.capacity:
-            min_value = self.min_heap[0]
-            if value < min_value:
-                pass
-            else:
-                heapq.heapreplace(self.min_heap, value)
+            heapq.heappushpop(self.min_heap, value)
         else:
             heapq.heappush(self.min_heap, value)
 
